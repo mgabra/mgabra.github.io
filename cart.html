@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Your Cart</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="navbar">
+				<a href="#"><img src="images/main-logo.png" alt="main logo" / width="125px" class="main-logo"></a>
+				<nav>
+					<ul id="MenuItems">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="products.html">Products</a></li>
+						<li><a href="#abUs">About us</a></li>
+						<li><a href="#abUs">Contacts</a></li>
+						<li><a href="account.html">Account</a></li>
+					</ul>
+				</nav>
+				<img src="images/cart.png" alt="cart" class="cart-icon">
+				<img src="images/menu.png" alt="menu-icon" class="menu-icon" onclick="menutoggle();">
+			</div>
+		</div>
+	</div>
+	<div class="small-container cart-page">
+		<table>
+			<th>product</th>
+			<th>price</th>
+		</table>
+		<table class="tableRows">
+
+		</table>
+		<div class="total-price">
+			<table>
+				<tr>
+					<td>total price</td>
+					<td class="Milad"></td>
+				</tr>
+				<tr>
+					<td>tax</td>
+					<td>0.00</td>
+				</tr>
+				<tr>
+					<td>grand total</td>
+					<td class="generaltotelPrice"></td>
+				</tr>
+			</table>
+		</div>
+
+	</div>
+	<div id="abUs"></div>
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-1">
+					<h3>Download our App</h3>
+					<p>Download App for Andriod and ios mobile phone.</p>
+					<div class="app-logo">
+						<a href="#"><img src="images/play-store.png" alt=""></a>
+						<a href="#"><img src="images/app-store.png" alt=""></a>
+					</div>
+				</div>
+				<div class="footer-col-2">
+					<a href="#"><img src="images/main-logo.png" alt="" class="main-logo"></a>
+					<p>Our purpose is to give the best quality product to the customer and bring them back and make them
+						happy.</p>
+				</div>
+				<div class="footer-col-3">
+					<h3>Useful Links</h3>
+					<ul>
+						<li><a>Coupons</a></li>
+						<li><a>Blog Post</a></li>
+						<li><a>Return Policy</a></li>
+						<li><a>Join Affiliate</a></li>
+					</ul>
+				</div>
+				<div class="footer-col-4">
+					<h3>Follow Us</h3>
+					<ul>
+						<li><a>Facebook</a></li>
+						<li><a>Twitter</a></li>
+						<li><a>Instagram</a></li>
+						<li><a>Youtube</a></li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<p class="copywrite">Copyright &copy; 2020 - www.nilara.com</p>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		var MenuItems = document.getElementById("MenuItems");
+
+		MenuItems.style.maxHeight = "0px";
+
+		function menutoggle() {
+			if (MenuItems.style.maxHeight == "0px") {
+				MenuItems.style.maxHeight = "200px";
+			}
+			else {
+				MenuItems.style.maxHeight = "0px";
+			}
+		}
+
+
+	</script>
+	<script src="js/data.js"></script>
+	<script src="js/scriptcategory.js"></script>
+	<script src="js/carts.js"></script>
+
+</body>
+
+</html>
